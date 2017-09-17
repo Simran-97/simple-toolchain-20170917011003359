@@ -1,0 +1,55 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmls="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"  />
+<title>Simply Secure</title>
+</head>
+
+<body>
+<br />
+<br />
+<br />
+<table border="1" align="center" width="500" height="300" style="text-align:center" cellspacing="0" cellpadding="10">
+
+<h1 style="text-align:center"><font size="100" face="Comic Sans MS">SIMPLY SECURE</font></h1>
+<p><h3 style="text-align:center"><font face="Stylus BT"><b>Protecting Your Secrets 24/7</b></font></h3></p><hr /><br /><br /><br /><br />
+<script type="text/javascript">
+function checkkey(){
+var code=document.getElementById('code').value;
+if(code!="292623"){
+	alert("please try again. unauthorised access");
+	return false;
+}
+else {
+	function makeid() {
+    return Math.floor(Math.random() * 5000)
+	}
+}
+}
+</script>
+
+
+<form action="www.patientrec.com" method="post" onsubmit="return checkkey()">
+
+<td>
+Patient Name:     <input type="text" name="p1" size="30" /><br /><br /><br />
+ Patient ID :     <input type="text" name="p2" size="30" /><br /><br /><br />
+ Access Key: <input name="code" id="code" type="password" value="" size="30" /><br /> <br />
+ 
+ <form action="patient1.php" method="get">
+ 
+ <input type="submit" formaction="patient1.html" value="submit">
+ </form>
+ 
+<p id="feedback"></p>
+
+</td>
+
+</table>
+</form>
+</body>
+
+</html>
